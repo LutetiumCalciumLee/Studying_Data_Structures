@@ -1,15 +1,15 @@
 # Data Structures
 
 ## 1. Data Structures and Algorithms
-- **Data Structure**
-    - Various structures for organizing and managing data in computers
-        - Each data type has efficient organization rules
-        - Primitive data structures: numbers, characters
-        - Composite data structures: containers for storing multiple data items together
+- Data Structure
+    - Various ways to organize and structure data in computers
+        - Each type of data has efficient organizing rules
+        - Primitive data structure: numbers, characters
+        - Composite data structure: containers storing multiple data items together
     - Composite data structures
         - Linear data structures
         - Non-linear data structures
-- **Algorithm**
+- Algorithm
     - A set of procedures/methods/instructions to solve a problem
         - Program = Data Structure + Algorithm
     - Algorithm requirements
@@ -23,61 +23,59 @@
         - Flowchart
         - Pseudo-code
         - Programming language
-- **Abstract Data Type (ADT)**
+- Abstract Data Type (ADT)
     - Data type defined abstractly
-        - Only the data and operations provided are defined
+        - Only the provided data and operations are defined
         - Implementation method is not defined
         - Focuses only on core structure and behavior
-    - Only interface is exposed
-        - Information hiding
+    - Only interface is exposed (information hiding)
     - More suitable to implement as a class
-- **Algorithm Performance**
+- Algorithm Performance
     - Computation speed, memory usage, functionality achievement
         - Computation speed is often prioritized
     - Measuring time is difficult
         - Implementation required
-        - Use identical hardware conditions
-        - Same software environment: implementation language (compiled > interpreted)
+        - Use identical hardware and software environments
         - Variability depending on data
-- **Complexity Analysis**
+- Complexity Analysis
     - Analyze algorithm efficiency without actual implementation
-        - Analyze how execution time increases as input size $$ n $$ increases
+        - Analyze how execution time increases as input size n increases
         - Evaluation method independent of hardware/software environment
     - Analyze the number of operations in the algorithm
-        - Time complexity function $$ T(n) $$: express number of operations as a function of $$ n $$
+        - Time complexity function T(n): express number of operations as a function of n
     - Big O notation
-        - As $$ n $$ increases, the highest-degree term dominates
+        - As n increases, the highest-degree term dominates
         - Other terms are relatively ignored
         - Only the highest-degree term is considered for time complexity
     - Big Omega
         - Indicates the lower bound of a function
     - Big Theta
         - Indicates both the upper and lower bounds with the same function
-- **Input Data**
+- Input Data
     - Execution time varies depending on input data
         - Best case, average case, worst case
         - Worst-case execution time is important: air traffic control, games, robotics
 
 ## 2. List & Set
-- **List / Linear List**
+- List / Linear List
     - Linear structure where items are arranged in order
         - Each item has an order/position
     - Insertion and addition possible at any position
     - List vs. Set
         - Whether there is an order among items
-- **List Implementation**
-    - **Array structure**
+- List Implementation
+    - Array structure
         - Used to create data of the same type together
         - Uses index operator [ ]
-        - Items are located in contiguous memory: access time complexity $$ O(1) $$
+        - Items are located in contiguous memory: access time complexity O(1)
         - Difficult to change capacity, inefficient for operations in the middle (insert, delete, modify)
-    - **Linked structure**
+    - Linked structure
         - Uses links to know the next item's location
-        - No guarantee that items are in adjacent memory: access time complexity $$ O(n) $$
+        - No guarantee that items are in adjacent memory: access time complexity O(n)
         - Easy to change capacity, efficient for insertions and deletions
-- **List Implementation Example**
+- List Implementation Example
     - List ADT using Python
-- **List Applications**
+- List Applications
     - Line editor
         - i: Insert line. Add a line at a given row number with a string
         - d: Delete a line. Delete the line at a given row number
@@ -86,126 +84,165 @@
         - l: Load file. Read lines from a specified file (test.txt)
         - s: Save file. Save edits to a specified file (test.txt)
         - q: Exit editor
-- **Set**
+- Set
     - Does not allow duplicate elements
     - No order among elements
-- **Set Implementation**
+- Set Implementation
     - Set ADT using Python
 
 ## 3. Stack
-- **Stack**
+- Stack
     - Last-In First-Out (LIFO) data structure
         - Only the top of the stack can be used for insertion and deletion
         - The top can be the front or rear of a list
     - Simpler operations than lists due to restricted input/output
-- **Stack Applications**
+- Stack Applications
     - "Undo" feature in document editors
     - "Back" button in web browsers
     - System stack for complex function calls
     - Source code checker (parentheses matching)
     - Calculator (expression evaluation)
     - Maze solving
-- **Stack Implementation**
+- Stack Implementation
     - Stack ADT using Python
-- **Stack Application Example**
+- Stack Application Example
     - Parentheses checker
 
 ## 4. Queue & Deque
-- **Queue**
-- **Queue Applications**
-- **Queue Implementation (Linear Queue)**
-- **Queue Implementation (Circular Queue)**
-- **Queue Module**
-- **Queue Applications**
-- **Deque**
-- **Deque Implementation**
-- **Deque Implementation (Circular Queue Inheritance)**
-- **Priority Queue**
-- **Priority Queue Applications**
-- **Priority Queue Implementation (Linear Queue)**
-- **Priority Queue Applications**
+- Queue
+    - First-In First-Out (FIFO) data structure
+    - Insertion at the rear, deletion at the front
+- Queue Applications
+    - Buffer, call queue
+    - Print job queue
+    - Buffering (e.g., real-time video streaming)
+    - Simulation (bank queues, airport runways, network packet modeling)
+- Queue Implementation (Linear Queue)
+    - Linear queue ADT using Python
+- Queue Implementation (Circular Queue)
+    - Uses separate variables for front and rear
+    - Front: index before the first element
+    - Rear: index of the last element
+    - Empty state: front and rear are equal
+    - Full state: front % M == (rear + 1) % M
+    - One space is always left empty to distinguish between full and empty
+    - Circular queue ADT using Python
+- Queue Module
+    - import queue
+    - Provides queue and stack classes
+- Queue Applications
+    - Maze search (breadth-first search)
+- Deque
+    - Double-ended queue: insertion and deletion possible at both ends
+        - More flexible than stack or queue
+        - Can be used as stack or queue
+    - Does not allow insertion or deletion in the middle
+- Deque Implementation
+    - Deque ADT using Python
+- Deque Implementation (Circular Queue Inheritance)
+    - Deque ADT using circular queue inheritance in Python
+- Priority Queue
+    - Queue with the concept of priority
+    - All data has priority; higher-priority data is output first
+    - Can behave as queue or stack depending on how priority is assigned
+        - If earlier items have higher priority: behaves like a queue (FIFO)
+        - If earlier items have lower priority: behaves like a stack (LIFO)
+- Priority Queue Applications
+    - Simulation
+    - Network traffic control
+    - OS job scheduling
+    - Numerical computation
+    - Applications (selecting high-priority candidates)
+        - Data compression: Huffman coding tree
+        - Kruskal minimum spanning tree algorithm
+        - Dijkstra shortest path algorithm
+        - A* algorithm
+- Priority Queue Implementation (Linear Queue)
+    - Priority queue ADT using Python
+- Priority Queue Applications
+    - Strategic maze search
 
 ## 5. Linked Structures
-- **Linked Structure**
-- **Linked Structure vs. Array Structure**
-- **Basic Linked List Structure**
-- **Types of Linked Lists**
-- **Singly Linked List Applications**
-- **Circular Linked List, Doubly Linked List Applications**
+- Linked Structure
+- Linked Structure vs. Array Structure
+- Basic Linked List Structure
+- Types of Linked Lists
+- Singly Linked List Applications
+- Circular Linked List, Doubly Linked List Applications
 
 ## 6. Sorting and Searching
-- **Sorting**
-- **Definition of Sorting**
-- **Types of Sorting**
+- Sorting
+- Definition of Sorting
+- Types of Sorting
     - Selection Sort
     - Insertion Sort
     - Bubble Sort
-- **Sorting Applications**
-- **Searching**
-- **Simple Searching Algorithms**
+- Sorting Applications
+- Searching
+- Simple Searching Algorithms
     - Linear Search
     - Binary Search
     - Interpolation Search
-- **Advanced Searching Algorithms**
-- **Hashing**
-- **Map Applications**
-- **Vocabulary Book**
+- Advanced Searching Algorithms
+- Hashing
+- Map Applications
+- Vocabulary Book
 
-## 7. Tree
-- **Tree**
-- **Tree Terminology**
-- **General Tree Representation**
-- **Binary Tree**
-- **Types of Binary Trees**
-- **Properties of Binary Trees**
-- **Binary Tree Representation**
+## 7. Tree (Tree)
+- Tree
+- Tree Terminology
+- General Tree Representation
+- Binary Tree
+- Types of Binary Trees
+- Properties of Binary Trees
+- Binary Tree Representation
     - Array Representation
     - Linked Representation
-- **Binary Tree Operations**
+- Binary Tree Operations
     - Traversal
     - Level Traversal
-- **Binary Tree Implementation Example**
-- **Binary Tree Applications**
+- Binary Tree Implementation Example
+- Binary Tree Applications
     - Morse Code Decision Tree
-- **Heap Tree**
+- Heap Tree
     - Heap Operations (Insert, Delete)
     - Heap Implementation
     - Max Heap
     - Heap Usage (Priority Queue)
-- **Huffman Code (Huffman Coding Tree)**
+- Huffman Code (Huffman Coding Tree)
     - Huffman Code Generation Method (using Min Heap)
 
 ## 8. Search Tree
-- **Search Tree**
-- **Binary Search Tree**
+- Search Tree
+- Binary Search Tree
     - Binary Search Tree Operations (Search, Insert, Delete)
     - Binary Search Tree Performance
     - Map Based on Binary Search Tree
-- **Balanced Binary Search Tree**
+- Balanced Binary Search Tree
     - Balanced Binary Search Tree Operations (Insert, etc.)
     - Map Using Balanced Binary Search Tree
 
-## 9. Graph
-- **Graph**
-- **Graph Definition**
-- **Types of Graphs**
-- **Graph Terminology**
-- **Graph Representation**
-- **Graph Traversal**
+## 9. Graph (Graph)
+- Graph
+- Graph Definition
+- Types of Graphs
+- Graph Terminology
+- Graph Representation
+- Graph Traversal
     - Depth-First Search (DFS, based on adjacency list)
     - Breadth-First Search (BFS, based on adjacency list)
-- **Graph Connected Component Check**
-- **Spanning Tree**
-- **Topological Sorting**
+- Graph Connected Component Check
+- Spanning Tree
+- Topological Sorting
 
-## 10. Weighted Graph
-- **Weighted Graph**
-- **Weighted Graph Representation**
+## 10. Weighted Graph (Weighted Graph)
+- Weighted Graph
+- Weighted Graph Representation
     - Using Adjacency Matrix
     - Using Adjacency List
-- **Minimum Spanning Tree**
+- Minimum Spanning Tree
     - Kruskal Algorithm
     - Prim Algorithm
-- **Shortest Path**
+- Shortest Path
     - Dijkstra Algorithm
     - Floyd-Warshall Algorithm

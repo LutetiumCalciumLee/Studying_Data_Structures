@@ -1,442 +1,451 @@
 # Data Structures
 
-## 1. Data Structures and Algorithms
+## Chapter 1: Data Structures and Algorithms
 
-- **Data Structure**
-    - Various ways to organize and structure data in a computer.
-        - Each type of data has efficient organizing rules.
-        - *Simple data structures*: numbers, characters
-        - *Compound data structures*: containers that store multiple data items together
-    - Compound data structures:
-        - Linear data structures
-        - Non-linear data structures
+### Data Structure
+- **Definition**: Various ways to organize and structure data in a computer
+- **Purpose**: Each type of data has efficient organizing rules
+- **Types**:
+  - Simple data structures: numbers, characters
+  - Compound data structures: containers that store multiple data items together
+- **Categories**:
+  - Linear data structures
+  - Non-linear data structures
 
-- **Algorithm**
-    - A procedure/method/set of instructions to solve a problem.
-        - Program = Data Structure + Algorithm
-    - Algorithm properties:
-        - Input: Zero or more inputs
-        - Output: At least one output
-        - Definiteness: Each instruction is clear and unambiguous
-        - Finiteness: Must terminate after a finite number of steps
-        - Effectiveness: Instructions are executable
-    - Algorithm description methods:
-        - Natural language
-        - Flowchart
-        - Pseudocode
-        - Programming language
+### Algorithm
+- **Definition**: A procedure/method/set of instructions to solve a problem
+- **Formula**: Program = Data Structure + Algorithm
+- **Properties**:
+  - Input: Zero or more inputs exist
+  - Output: At least one output exists
+  - Definiteness: Instructions are clear and unambiguous
+  - Finiteness: Must terminate after finite steps
+  - Effectiveness: Instructions are executable operations
+- **Description Methods**:
+  - Natural language
+  - Flowchart
+  - Pseudocode
+  - Programming language
 
-- **Abstract Data Type (ADT)**
-    - Data type defined abstractly
-        - Only the data and operations provided are defined
-        - Implementation method is not specified
-        - Focuses on core structure and behavior
-    - Only the interface is exposed (information hiding)
-    - More suitable to implement as a class
+### Abstract Data Type (ADT)
+- **Definition**: Data type defined abstractly
+- **Characteristics**:
+  - Only data and operations are defined
+  - Implementation method is not specified
+  - Focuses on core structure and behavior
+- **Interface**: Only exposes the interface (information hiding)
+- **Implementation**: More suitable to implement as a class
 
-- **Algorithm Performance**
-    - Calculation speed, memory usage, functionality
-        - Calculation speed is often prioritized
-    - Measuring time is difficult:
-        - Requires implementation
-        - Use the same hardware and software environment
-        - Implementation language (compiled > interpreted)
-        - Varies depending on input data
+### Algorithm Performance
+- **Factors**: Calculation speed, memory usage, functionality achievement
+- **Priority**: Calculation speed is often prioritized
+- **Measurement Challenges**:
+  - Requires implementation
+  - Same hardware conditions needed
+  - Same software environment (compiled language > interpreted language)
+  - Variable according to data
 
-- **Complexity Analysis**
-    - Analyze algorithm efficiency without actual implementation
-        - Analyze how execution time increases as input size $$ n $$ increases
-        - Evaluation method independent of hardware/software environment
-    - Analyze the number of operations in the algorithm
-        - Time complexity function $$ T(n) $$: number of operations as a function of $$ n $$
-    - **Big O notation**
-        - As $$ n $$ increases, the highest order term dominates
-        - Lower order terms are ignored
-        - Only the highest order term of the time complexity function is considered
-    - **Big Omega ($$\Omega$$)**
-        - Indicates the lower bound of a function
-    - **Big Theta ($$\Theta$$)**
-        - Indicates both the upper and lower bounds with the same function
+### Complexity Analysis
+- **Purpose**: Analyze algorithm efficiency without actual implementation
+- **Focus**: Analyze how execution time increases as input size n increases
+- **Method**: Hardware and software environment independent evaluation
+- **Time Complexity Function**: T(n) - number of operations as function of n
+- **Big O Notation**: Only considers the highest order term as n increases
+- **Big Omega (Ω)**: Indicates lower bound of function
+- **Big Theta (Θ)**: Indicates both upper and lower bounds with same function
 
-- **Input Data**
-    - Execution time varies by input data
-        - Best case, average case, worst case
-        - Worst-case execution time is important (e.g., air traffic control, games, robotics)
+### Input Data
+- **Execution Time Variation**: Depends on input data
+- **Cases**:
+  - Best case
+  - Average case
+  - Worst case
+- **Importance**: Worst-case execution time is important for critical systems (aircraft control, games, robotics)
 
-## 2. List & Set
+## Chapter 2: List & Set
 
-- **List / Linear List**
-    - Linear data structure where items are arranged in order
-        - Each item has an order/position
-    - Items can be inserted or added at arbitrary positions
-    - List vs Set
-        - Whether there is an order among items
+### List / Linear List
+- **Definition**: Linear data structure with items arranged in order
+- **Characteristics**:
+  - Items have order/position
+  - Can insert and add items at arbitrary positions
+- **List vs Set**: Whether there is order among items
 
-- **List Implementation Methods**
-    - **Array structure**
-        - Used when creating data of the same type together
-        - Uses index operator [ ]
-        - Items are in contiguous memory: access time complexity $$ O(1) $$
-        - Difficult to change capacity; inefficient for operations in the middle (add, delete, modify)
-    - **Linked structure**
-        - Uses links to know the next item's position
-        - Items may not be in adjacent memory: access time complexity $$ O(n) $$
-        - Easy to change capacity; efficient for insertion and deletion
+### List Implementation Methods
+- **Array Structure**:
+  - Used when creating data of same type together
+  - Uses index operator [ ]
+  - Items in contiguous memory: O(1) access time complexity
+  - Difficult to change capacity, inefficient for middle operations
+- **Linked Structure**:
+  - Uses links to know next item's position
+  - Items not guaranteed to be in adjacent memory: O(n) access time complexity
+  - Easy to change capacity, efficient insertion and deletion
 
-- **List Applications**
-    - **Line Editor**
-        - i: Insert a line at a specified line number
-        - d: Delete a line at a specified line number
-        - r: Replace a line at a specified line number
-        - p: Print all lines with line numbers
-        - l: Load lines from a specified file (e.g., test.txt)
-        - s: Save lines to a specified file (e.g., test.txt)
-        - q: Quit the editor
+### List Implementation
+- Python-based List ADT implementation
+- Class-based List ADT implementation
 
-- **Set**
-    - Does not allow duplicate elements
-    - No order among elements
+### List Applications
+- **Line Editor**:
+  - i: Insert line
+  - d: Delete line
+  - r: Replace line
+  - p: Print current content
+  - l: Load file
+  - s: Save file
+  - q: Quit editor
 
-## 3. Stack
+### Set
+- **Definition**: Collection that does not allow duplicate elements
+- **Characteristics**:
+  - No duplicate elements allowed
+  - No order among elements
 
-- **Stack**
-    - Last-In First-Out (LIFO) data structure
-        - Insertion and deletion only at the top
-        - The top can be either the front or back of a list
-    - Simpler operations than lists due to restricted input/output
+### Set Implementation
+- Python-based Set ADT implementation with operations:
+  - union, intersect, difference, contains, insert, delete
 
-- **Stack Applications**
-    - Undo function in document editors
-    - "Back" function in web browsers
-    - System stack (complex function call relationships)
-    - Source code checking (parentheses matching)
-    - Calculator (expression evaluation)
-    - Maze exit finding
+## Chapter 3: Stack
 
-## 4. Queue & Deque
+### Stack Definition
+- **Structure**: Last-In First-Out (LIFO) data structure
+- **Operations**: Only insertion and deletion at the top
+- **Position**: Top can be either front or back of list
+- **Simplicity**: Simpler operations than lists due to restricted I/O
 
-- **Queue**
-    - First-In First-Out (FIFO) data structure
-    - Insertion at the rear, deletion at the front
+### Stack Applications
+- Document editor "undo" function
+- Web browser "back" function
+- System stack for complex function calls
+- Source code checking (parentheses matching)
+- Calculator programs (expression evaluation)
+- Maze exit finding
 
-- **Queue Applications**
-    - Buffer, call queue
-    - Print job queue
-    - Buffering (e.g., real-time video streaming)
-    - Simulation (bank waiting tickets, airport runway usage, network packet modeling)
+### Stack Implementation
+- **Python-based Stack ADT**:
+  - Operations: push, pop, peek, isEmpty, size, clear
+  - Efficiency: Using rear of Python list is O(1), using front is O(n)
 
-- **Queue Implementation (Linear Queue)**
-    - Uses front and rear variables
+### Stack Applications
+- **Parentheses Checking**: Validate matching parentheses in code
+- **Expression Evaluation**: Convert infix to postfix notation
+- **Maze Solving**: Depth-first search using stack
 
-- **Queue Implementation (Circular Queue)**
-    - Front: index before the first element
-    - Rear: index of the last element
-    - Empty state: front and rear are equal
-    - Full state: $$ \text{front} \% M == (\text{rear} + 1) \% M $$
-    - Always keep one space empty to distinguish empty and full states
+## Chapter 4: Queue & Deque
 
-- **Deque**
-    - Double-ended queue: insertion and deletion at both ends
-        - More flexible than stack or queue
-        - Cannot insert or delete in the middle
+### Queue
+- **Structure**: First-In First-Out (FIFO) data structure
+- **Operations**: Insertion at rear, deletion at front
 
-- **Priority Queue**
-    - Queue with priority concept
-    - Each data item has a priority; higher priority items are output first
-    - Can behave like a queue (FIFO) or stack (LIFO) depending on priority assignment
+### Queue Applications
+- Buffer, call queue
+- Print job queue
+- Buffering (real-time video streaming)
+- Simulation (bank waiting tickets, airport runway usage, network packet modeling)
 
-- **Priority Queue Applications**
-    - Simulation
-    - Network traffic control
-    - OS task scheduling
-    - Numerical computation
-    - Applications: Huffman coding tree, Kruskal's MST algorithm, Dijkstra's shortest path, A* algorithm
+### Queue Implementation
+- **Linear Queue**: Simple implementation using Python lists
+- **Circular Queue**:
+  - Variables: front (before first element), rear (last element index)
+  - Empty state: front == rear
+  - Full state: front % M == (rear + 1) % M
+  - Always keep one space empty to distinguish empty and full states
 
-## 5. Linked Structures
+### Python Queue Module
+- `import queue`
+- Provides Queue and Stack classes
+- Queue.Queue(), Queue.LifoQueue()
 
-- **Linked Structure**
-    - Method of managing/representing scattered data by connecting them with links
-        - Increasing the number of links allows efficient representation of linear, tree, and graph structures
-    - **Linked list**: a linear arrangement of linked nodes
+### Queue Applications
+- **Maze Solving**: Breadth-first search using queue
 
-- **Linked Structure vs Array Structure**
-    - Fixed capacity (array)
-    - Insertion/deletion efficiency: $$ O(n) $$ (array) vs $$ O(1) $$ (linked)
-    - Access efficiency: $$ O(1) $$ (array) vs $$ O(n) $$ (linked)
-    - Implementation convenience and error occurrence
+### Deque (Double-ended Queue)
+- **Structure**: Queue allowing insertion and deletion at both ends
+- **Flexibility**: More flexible I/O than stack or queue
+- **Restriction**: Cannot insert or delete in middle
 
-- **Basic Structure of Linked List**
-    - **Node**
-        - Data field: variable to store data
-        - Link field: variable to store the address of another node
-    - **Head pointer**
-        - Stores the address of the first node
-        - Last link is None
+### Deque Implementation
+- Inherits from circular queue
+- Additional operations: addFront, deleteFront, getFront, addRear, deleteRear, getRear
 
-- **Types of Linked Lists**
-    - Singly linked list: nodes connected in one direction (one link)
-    - Circular linked list: last node's link points to the first node
-    - Doubly linked list: each node knows both previous and next nodes
+### Priority Queue
+- **Definition**: Queue with priority concept
+- **Behavior**: Higher priority data is output first
+- **Generality**: Most general queue type
+- **Behavior Control**: Can behave like queue (FIFO) or stack (LIFO) based on priority assignment
 
-## 6. Sorting and Searching
+### Priority Queue Applications
+- Simulation
+- Network traffic control
+- OS task scheduling
+- Numerical computation
+- Applications requiring highest priority selection:
+  - Data compression (Huffman coding tree)
+  - Kruskal's minimum spanning tree algorithm
+  - Dijkstra's shortest path algorithm
+  - A* algorithm
 
-- **Sorting**
-    - Rearranging data in order
-        - Efficient sorting requires appropriate data structures
-        - Items must have comparable attributes (sort key)
-    - Sorting affects search efficiency
-    - Ascending and descending order
+## Chapter 5: Linked Structures
 
-- **Definition of Sorting**
-    - Rearranging records in order of a key
-        - Record: object to be sorted
-        - Field: attributes of a record
-        - Key (sort key): attribute used as sorting criterion
+### Linked Structure
+- **Definition**: Method of managing/representing scattered data by connecting with links
+- **Scalability**: Increasing links allows efficient representation of linear, tree, and graph structures
+- **Linked List**: Linear arrangement of linked structures
 
-- **Types of Sorting**
-    - By location:
-        - Internal sorting: all data in main memory
-        - External sorting: data mainly on external storage, only part in memory (for large data)
-    - By complexity/efficiency:
-        - Simple, inefficient: insertion sort, selection sort, bubble sort
-        - Complex, efficient: quicksort, heap sort, merge sort, radix sort
-    - By stability:
-        - Stability: whether records with the same key retain their relative order after sorting
-        - Stable: insertion sort, bubble sort, merge sort
+### Linked Structure vs Array Structure
+- **Capacity**: Fixed (array) vs Dynamic (linked)
+- **Insertion/Deletion**: O(n) (array) vs O(1) (linked)
+- **Access**: O(1) (array) vs O(n) (linked)
+- **Implementation**: Convenience and error occurrence differences
 
-- **Basic Sorting Algorithms**
-    - **Selection Sort**
-        - Selects the smallest number and moves it to the front
-        - Divides the list into unsorted and sorted parts
-        - In-place sorting (no extra array)
-        - Steps:
-            1. Select the smallest number from the unsorted list
-            2. Move it to the end of the sorted list
-            3. Repeat until the unsorted list is empty
-        - Time complexity: $$ O(n^2) $$
-            - $$ (n-1) + (n-2) + \cdots + 1 = \frac{n(n-1)}{2} = O(n^2) $$
+### Basic Linked List Structure
+- **Node**:
+  - Data field: variable to store data
+  - Link field: variable to store address of another node
+- **Head Pointer**: stores address of first node
+- **Termination**: Last link value is None
 
-    - **Insertion Sort**
-        - Insert a new record into the correct position in the sorted part
-        - In-place sorting
-        - Steps:
-            1. Select the correct position for the new record
-            2. Move existing records and insert the new record
-            3. Repeat until all records are sorted
-        - Time complexity:
-            - Best case: $$ O(n) $$
-            - Worst case: $$ O(n^2) $$
+### Types of Linked Lists
+- **Singly Linked List**: Connected in one direction (1 link)
+- **Circular Linked List**: Last node's link points to first node
+- **Doubly Linked List**: Knows both previous and next node links
 
-    - **Bubble Sort**
-        - Compare adjacent records and swap if out of order
-        - After each pass, the largest record moves to the end
-        - In-place sorting
-        - Steps:
-            1. Perform compare-swap for the entire list
-            2. Repeat for the remaining unsorted part
-        - Time complexity: $$ O(n^2) $$
+### Linked List Applications
+- **Linked Stack**: Stack implementation using Node class
+- **Linked List**: List implementation using Node class with getNode(pos) method
+- **Circular Linked List**: Used for linked queue
+- **Doubly Linked List**: Used for linked deque
 
-- **Sorting Applications**
-    - Set operations: sorting can improve time complexity for set comparison, union, difference, intersection
+## Chapter 6: Sorting and Searching
 
-- **Searching**
-    - Finding something among data
-        - Example: finding a product, searching a website with words/phrases
-    - Definition: finding a record with a specific search key in a table
-        - Table: set of records
-        - Search key: key to identify records
-    - Table organization affects search efficiency
-    - **Map/Dictionary** (e.g., Python dict): data structure for searching
-        - Entry: record with a key
-        - Key: search key (e.g., word, name)
-        - Value: value associated with the key
+### Sorting
+- **Definition**: Rearranging data in order
+- **Requirements**: 
+  - Appropriate data structure needed for efficient sorting
+  - Comparable attributes needed for comparison
+  - Attributes can be sorting criteria
+- **Impact**: Sorting affects search efficiency
+- **Orders**: Ascending order, descending order
 
-- **Searching Algorithms**
-    - **Sequential Search**
-        - Simple and intuitive
-        - Works for unsorted tables: checks each record in order
-        - Time complexity: $$ O(n) $$
+### Sorting Definition
+- **Process**: Rearranging records in key order
+- **Terms**:
+  - Record: object to be sorted
+  - Field: attributes of record
+  - Key/Sort key: attribute used as sorting criterion
 
-    - **Binary Search**
-        - For sorted tables (e.g., dictionary lookup)
-            1. Check the middle value to determine which half to search
-            2. Each step halves the number of items to check
-        - Not suitable for frequent insertions/deletions
-        - Time complexity: $$ O(\log_2 n) $$
+### Sorting Classification
+- **By Location**:
+  - Internal sorting: all data in main memory
+  - External sorting: most data on external storage, part in memory
+- **By Complexity/Efficiency**:
+  - Simple, inefficient: insertion sort, selection sort, bubble sort
+  - Complex, efficient: quicksort, heap sort, merge sort, radix sort
+- **By Stability**:
+  - Stability: relative order of records with same key value unchanged after sorting
+  - Stable: insertion sort, bubble sort, merge sort
 
-    - **Interpolation Search**
-        - Variant of binary search for sorted tables
-            - Predicts the likely position of the search key
-            - Divides the list unevenly based on key value
-            - Formula:
-                $$
-                \text{position} = \text{low} + (\text{high} - \text{low}) \cdot \frac{k - A[\text{low}]}{A[\text{high}] - A[\text{low}]}
-                $$
-        - Time complexity: $$ O(\log_2 n) $$
+### Simple Sorting Algorithms
+- **Selection Sort**:
+  - Method: Select smallest number and move to front
+  - Time complexity: O(n²)
+  - In-place sorting
+- **Insertion Sort**:
+  - Method: Insert new record in correct position in sorted part
+  - Time complexity: O(n) best case, O(n²) worst case
+  - In-place sorting
+- **Bubble Sort**:
+  - Method: Compare adjacent records and swap if out of order
+  - Time complexity: O(n²)
+  - In-place sorting
 
-- **Advanced Search: Hashing**
-    - Uses arithmetic operations on the key to compute the address
-        - Hash function: computes storage address from a key
-        - Hash address: address calculated by the hash function
-        - Hash table: table storing records at hash addresses
-    - Time complexity: $$ O(1) $$
-    - **Collision**: different keys map to the same address
-        - Synonym: keys causing collisions
-    - **Overflow**: more collisions than slots
-    - **Linear Probing**: checks next slots for empty space
-        - Steps:
-            1. Repeat linear probing until an empty slot is found
-            2. Store record if space exists
-            3. Wrap to start if end is reached
-            4. If back to collision point, table is full
-    - **Clustering**: records cluster at collision points, reducing efficiency
-    - **Deletion**: deletion in linear probing can make search impossible
-    - **Collision Resolution**:
-        - Quadratic probing
-        - Double hashing (rehashing): uses a second hash function
-        - Chaining: store multiple records in a bucket (linked list)
-    - **Good Hash Function**:
-        - Few collisions
-        - Uniform address distribution
-        - Fast calculation
-    - **Examples**:
-        - Division: $$ h(k) = k \% M $$ (M is prime)
-        - Folding: for large keys
-        - Mid-square: use middle bits of squared key
-        - Bit extraction, digit analysis
-    - **Performance**: consider loading factor (density)
+### Sorting Applications
+- **Set Operations**: Sorting can improve time complexity for set comparison, union, difference, intersection
 
-## 7. Tree
+### Searching
+- **Definition**: Finding something among data
+- **Formal Definition**: Finding record with desired search key in table
+- **Terms**:
+  - Table: collection of records
+  - Search key: key to identify records
+- **Efficiency**: Table organization affects search efficiency
+- **Map/Dictionary**: Data structure for searching with key-value entries
 
-- **Tree**
-    - Data structure suitable for representing hierarchical data
-        - Examples: organization chart, family tree, computer folder structure
-    - Applications:
-        - Search tree (search)
-        - Heap tree (priority queue)
-        - Decision tree (decision structure)
-    - Trees are defined recursively (hence recursive algorithms are common)
+### Simple Search Algorithms
+- **Sequential Search**:
+  - Method: Check each record in order from beginning
+  - Time complexity: O(n)
+  - Works on unsorted tables
+- **Binary Search**:
+  - Method: Check middle value to determine which half to search
+  - Time complexity: O(log₂n)
+  - Requires sorted table
+- **Interpolation Search**:
+  - Method: Predict likely position of search key
+  - Time complexity: O(log₂log₂n)
+  - Variant of binary search
 
-- **Tree Terminology**
+### Advanced Search: Hashing
+- **Definition**: Uses arithmetic operations on key to compute address
+- **Components**:
+  - Hash function: computes storage address from key
+  - Hash address: address calculated by hash function
+  - Hash table: table storing records at hash addresses
+- **Time Complexity**: O(1) ideal case
+- **Problems**:
+  - Collision: different keys map to same address
+  - Overflow: more collisions than available slots
+- **Collision Resolution**:
+  - Linear probing: check next slots sequentially
+  - Quadratic probing: use quadratic increments
+  - Double hashing: use second hash function
+  - Chaining: store multiple records in linked list per bucket
 
-| Term | Meaning |
-|------|---------|
-| Root node | The highest node in a hierarchical structure; every node is the root of its own subtree |
-| Edge | Connection between nodes |
-| Parent node, Child node | Nodes directly connected by an edge; parent is above, child is below |
-| Sibling node | Nodes sharing the same parent |
-| Ancestor node, Descendant node | Nodes on the path from a node to the root; all nodes below a node |
-| Terminal (leaf) node | Node with no children (opposite: non-terminal node) |
-| Degree of node | Number of children a node has |
-| Degree of tree | Largest node degree in the tree |
-| Level | Number assigned to each layer (root is level 1, increases downward) |
-| Height of tree | Maximum level in the tree |
-| Forest | Set of trees |
+### Hash Function Examples
+- **Division method**: h(k) = k % M (M is prime)
+- **Folding method**: for large keys
+- **Mid-square method**: use middle bits of squared key
+- **Bit extraction method**
+- **Digit analysis method**
+- **String hashing**: convert characters to integers
 
-- **General Tree Representation**
-    - General tree: nodes can have any number of children
-    - Typically represented with linked structures
-        - Data field: node value, links: child nodes
-        - Number of links varies per node, often managed as a list
-    - Simplified: two links per node (child, sibling)
+### Map Applications
+- **Dictionary**: Entry definition with key-value pairs
+- **Implementation methods**:
+  - Sequential search map using lists
+  - Hash map using chaining
+  - Python dictionary implementation
 
-- **Binary Tree**
-    - Each node has up to two subtrees
-        - Defined recursively
-        - Subtrees can be empty
-        - Children are ordered (left, right)
-    - Definition:
-        1. Empty, or
-        2. A root and left/right subtrees (which are themselves binary trees)
+## Chapter 7: Tree
 
-- **Types of Binary Trees**
-    - **Full Binary Tree**: every level is completely filled
-        - Numbering: root is 1, then left to right
-    - **Complete Binary Tree**: all levels except possibly the last are full; last level filled left to right
+### Tree
+- **Definition**: Data structure suitable for representing hierarchical data
+- **Examples**: Organization chart, family tree, computer folder structure
+- **Applications**:
+  - Search tree (searching)
+  - Heap tree (priority queue)
+  - Decision tree (decision structure)
+- **Recursive Definition**: Trees are defined recursively
 
-- **Binary Tree Properties**
-    - If there are $$ n $$ nodes, there are $$ n - 1 $$ edges
-    - If height is $$ k $$, has up to $$ 2^k - 1 $$ nodes
-    - Height of a binary tree with $$ n $$ nodes: $$ \log_2 n + 1 $$ to $$ n $$
-        - $$ n \leq 2^k - 1 \Rightarrow \log_2 n + 1 \leq k $$
+### Tree Terminology
+- **Root node**: Highest node in hierarchical structure
+- **Edge**: Line connecting nodes
+- **Parent/Child node**: Upper/lower nodes directly connected by edge
+- **Sibling node**: Nodes with same parent
+- **Ancestor/Descendant node**: Nodes on path to root / all nodes below
+- **Terminal/Leaf node**: Node with no children
+- **Degree of node**: Number of children a node has
+- **Degree of tree**: Largest node degree in tree
+- **Level**: Layer number (root is level 1, increases downward)
+- **Height of tree**: Maximum level in tree
+- **Forest**: Collection of trees
 
-- **Binary Tree Representation**
-    - **Array Representation**
-        - Steps:
-            1. Compute the height and allocate an array of size $$ 2^k - 1 $$
-            2. Use indices as node numbers
-        - Suitable for full or complete binary trees
-        - Memory waste for skewed trees
-        - Simple but limited by array size and tree height
-    - **Linked Representation**
-        - Each node has two links (left, right child)
+### General Tree Representation
+- **General Tree**: Tree where nodes can have arbitrary number of children
+- **Representation**: Usually linked structure with data field and child links
+- **Simplification**: Use two links (child, sibling) for uniform representation
 
-- **Binary Tree Traversal**
-    - Visit every node in the tree exactly once
-        - Preorder (VLR): root → left → right (e.g., level calculation, structured document output)
-        - Inorder (LVR): left → root → right (e.g., sorting)
-        - Postorder (LRV): left → right → root (e.g., folder size calculation)
-    - Level-order traversal: visit nodes by level using a queue (not recursive)
+### Binary Tree
+- **Definition**: Tree where every node has at most two subtrees
+- **Properties**:
+  - Recursively defined
+  - Subtrees can be empty
+  - Maximum 2 children per node
+  - Children are ordered (left, right)
 
-- **Binary Tree Applications**
-    - Morse code decision tree
-        - Encoding: alphabet → Morse code, $$ O(1) $$
-        - Decoding: Morse code → alphabet, $$ O(n) $$
-        - Decision tree-based decoding: $$ O(\log_2 n) $$
+### Binary Tree Types
+- **Full Binary Tree**: Every level completely filled
+- **Complete Binary Tree**: All levels filled except possibly last (filled left to right)
 
-- **Heap Tree**
-    - Heap operations (insert, delete)
-    - Heap implementation
-    - Max heap
-    - Heap as a priority queue
+### Binary Tree Properties
+- n nodes → n-1 edges
+- Height k → at most 2^k - 1 nodes
+- n nodes → height between ⌈log₂(n+1)⌉ and n
 
-- **Huffman Coding Tree**
-    - Huffman code generation using a min-heap
+### Binary Tree Representation
+- **Array Representation**:
+  - Allocate array of size 2^k - 1
+  - Use full binary tree numbering as indices
+  - Good for full/complete trees, wasteful for skewed trees
+- **Linked Representation**:
+  - Each node has two links (left, right child)
+  - More flexible but requires more complex management
 
-## 8. Search Tree
+### Binary Tree Traversal
+- **Preorder (VLR)**: Root → Left subtree → Right subtree
+- **Inorder (LVR)**: Left subtree → Root → Right subtree
+- **Postorder (LRV)**: Left subtree → Right subtree → Root
+- **Level-order**: Visit nodes level by level using queue
 
-- **Search Tree**
-- **Binary Search Tree**
-    - Operations: search, insert, delete
-    - Performance
-    - Map based on binary search tree
-- **Balanced Binary Search Tree**
-    - Operations (insert, etc.)
-    - Map using balanced binary search tree
+### Binary Tree Operations
+- **Node counting**: Count all nodes recursively
+- **Leaf counting**: Count nodes with no children
+- **Height calculation**: Find maximum depth
 
-## 9. Graph
+### Binary Tree Applications
+- **Morse Code Decision Tree**: 
+  - Encoding: alphabet → Morse code (O(1))
+  - Decoding: Morse code → alphabet using decision tree (O(log n))
 
-- **Graph**
-- Definition of graph
-- Types of graphs
-- Graph terminology
-- Graph representation
-- Graph traversal
-    - Depth-First Search (DFS, adjacency list)
-    - Breadth-First Search (BFS, adjacency list)
-- Connected component check
-- Spanning tree
-- Topological sort
+### Heap Tree
+- **Definition**: Complete binary tree based data structure
+- **Purpose**: Quickly find largest (or smallest) value
+- **Types**:
+  - Max heap: parent key ≥ child key
+  - Min heap: parent key ≤ child key
+- **Operations**:
+  - Insert: O(log₂n) - sift-up process
+  - Delete: O(log₂n) - sift-down process
+- **Representation**: Array is most efficient
+- **Applications**: Priority queue implementation
 
-## 10. Weighted Graph
+### Huffman Coding Tree
+- **Purpose**: Variable-length coding based on frequency
+- **Principle**: High frequency items get shorter bit codes
+- **Construction**: Use min heap to build tree from bottom up
+- **Efficiency**: More efficient than fixed-length ASCII codes
 
-- **Weighted Graph**
-- Weighted graph representation
-    - Using adjacency matrix
-    - Using adjacency list
-- Minimum spanning tree
-    - Kruskal's algorithm
-    - Prim's algorithm
-- Shortest path
-    - Dijkstra's algorithm
-    - Floyd-Warshall algorithm
+## Chapter 8: Search Tree
 
-### Note on Formulas
+### Search Tree
 
-- **Selection Sort**: $$ O(n^2) $$ is correct.
-- **Insertion Sort**: Best $$ O(n) $$, worst $$ O(n^2) $$ is correct.
-- **Bubble Sort**: $$ O(n^2) $$ is correct.
-- **Binary Search**: $$ O(\log_2 n) $$ is correct.
-- **Interpolation Search**: $$ O(\log_2 \log_2 n) $$ is correct.
-- **Hashing**: $$ O(1) $$ average case is correct, but can degrade with collisions.
-- **Binary Tree Properties**: $$ n \leq 2^k - 1 \Rightarrow \log_2 n + 1 \leq k $$ is correct.
+### Binary Search Tree (BST)
+
+### BST Operations
+
+### BST Performance
+
+### Balanced Binary Search Tree (AVL Tree)
+
+## Chapter 9: Graph
+
+### Graph
+
+### Graph Definition
+
+### Graph Types
+
+### Graph Terminology
+
+### Graph Representation
+
+### Graph Traversal
+
+### Graph Applications
+
+## Chapter 10: Weighted Graph
+
+### Weighted Graph
+
+### Weighted Graph Representation
+
+### Minimum Spanning Tree (MST)
+
+### MST Algorithms
+
+### Shortest Path
+
+### Shortest Path Algorithms
+
+### Algorithm Comparison

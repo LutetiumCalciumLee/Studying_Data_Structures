@@ -409,14 +409,43 @@
 ## Chapter 8: Search Tree
 
 ### Search Tree
+- **Purpose**: Tree-based data structure for efficient searching
+- **Advantage**: Overcomes limitations of existing search methods
 
 ### Binary Search Tree (BST)
+- **Definition**: Binary tree for efficient searching (O(log₂n))
+- **Properties**:
+  - All nodes have unique keys
+  - Left subtree keys  root key
+  - Both subtrees are also BSTs
+- **Advantage**: Maintains sorted state by definition
 
 ### BST Operations
+- **Search by Key**: O(log₂n) average case
+  - Compare key with root
+  - Go left if key  root
+- **Search by Value**: O(n) - must check all nodes
+- **Min/Max Search**: Follow leftmost/rightmost path
+- **Insert**: O(log₂n) - follow search path, insert at failure point
+- **Delete**: Most complex operation with 3 cases:
+  - Case 1: Leaf node - simply remove
+  - Case 2: One child - connect child to parent
+  - Case 3: Two children - replace with successor
 
 ### BST Performance
+- **Tree Shape Dependent**: Performance varies with tree structure
+- **Balanced Tree**: O(log₂n) for all operations
+- **Skewed Tree**: O(n) for all operations (worst case)
 
 ### Balanced Binary Search Tree (AVL Tree)
+- **Purpose**: Guarantee balanced tree for consistent O(log₂n) performance
+- **Balance Factor**: Height difference between left and right subtrees
+- **Constraint**: Balance factor must be -1, 0, or 1
+- **Rebalancing**: Use rotations when balance factor becomes ±2
+- **Rotation Types**:
+  - Single rotation: LL, RR
+  - Double rotation: LR, RL
+- **Insert Operation**: Insert then rebalance from inserted node up to root
 
 ## Chapter 9: Graph
 

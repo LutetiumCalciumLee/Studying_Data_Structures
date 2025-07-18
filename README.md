@@ -450,18 +450,56 @@
 ## Chapter 9: Graph
 
 ### Graph
+- **Definition**: Data structure representing relationships between connected objects
+- **Versatility**: Most generalized data structure (can represent linear structures, trees)
+- **Applications**: Subway maps, flight routes, social networks, computer networks
 
 ### Graph Definition
+- **Notation**: G = (V, E)
+  - G: graph
+  - V(G): set of vertices/nodes
+  - E(G): set of edges/links
+- **Representation**: Pairs of vertices, e.g., (A, B)
 
 ### Graph Types
+- **Undirected Graph**: Edges have no direction (bidirectional)
+- **Directed Graph**: Edges have direction (unidirectional)
+- **Weighted Graph**: Edges have costs or weights
+- **Subgraph**: Graph formed by subset of vertices and edges
 
 ### Graph Terminology
+- **Adjacent Vertex**: Vertices directly connected by edge
+- **Degree**: Number of edges connected to vertex
+- **Path**: Sequence of vertices connected by edges
+- **Simple Path**: Path with no repeated edges
+- **Cycle**: Path where start and end vertices are same
+- **Connected Graph**: Graph where path exists between all vertex pairs
+- **Complete Graph**: Graph with edges between all vertex pairs
+- **Tree**: Connected graph with no cycles
 
 ### Graph Representation
+- **Adjacency Matrix**: n×n matrix representing connections
+  - Advantages: O(1) edge lookup, suitable for dense graphs
+  - Disadvantages: O(n²) space regardless of edge count
+- **Adjacency List**: List of adjacent vertices for each vertex
+  - Advantages: O(n+e) space, suitable for sparse graphs
+  - Disadvantages: O(degree) edge lookup time
 
 ### Graph Traversal
+- **Depth-First Search (DFS)**:
+  - Strategy: Go deep first, backtrack when stuck
+  - Implementation: Use stack or recursion
+  - Applications: Connected components, topological sort
+- **Breadth-First Search (BFS)**:
+  - Strategy: Visit nearby vertices first
+  - Implementation: Use queue
+  - Applications: Shortest path, level-order traversal
 
 ### Graph Applications
+- **Connected Component Detection**: Find separate connected parts
+- **Spanning Tree**: Tree connecting all vertices with n-1 edges
+- **Topological Sort**: Order vertices respecting dependencies (DAG only)
+
 
 ## Chapter 10: Weighted Graph
 

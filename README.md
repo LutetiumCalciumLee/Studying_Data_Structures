@@ -504,15 +504,49 @@
 ## Chapter 10: Weighted Graph
 
 ### Weighted Graph
+- **Definition**: Graph with costs or weights assigned to edges
+- **Representation**: G = (V, E, w) where w represents edge weights
+- **Path Length**: Sum of weights along path
+- **Applications**: Network routing, transportation, resource allocation
 
 ### Weighted Graph Representation
+- **Adjacency Matrix**: Store weight values, use ∞ or None for no edge
+- **Adjacency List**: Store (vertex, weight) pairs in lists
 
 ### Minimum Spanning Tree (MST)
+- **Definition**: Spanning tree with minimum total edge weight
+- **Properties**: n-1 edges, no cycles, connects all vertices
+- **Applications**: Communication networks, road networks, circuit design
 
 ### MST Algorithms
+- **Kruskal's Algorithm**:
+  - Strategy: Sort edges by weight, add if no cycle created
+  - Time Complexity: O(e log e)
+  - Uses Union-Find for cycle detection
+  - Better for sparse graphs
+- **Prim's Algorithm**:
+  - Strategy: Start with vertex, expand tree by adding minimum weight edge
+  - Time Complexity: O(n²)
+  - Better for dense graphs
 
 ### Shortest Path
+- **Definition**: Path with minimum total weight between vertices
+- **Applications**: Navigation, network routing, resource optimization
 
 ### Shortest Path Algorithms
+- **Dijkstra's Algorithm**:
+  - Purpose: Single-source shortest path to all vertices
+  - Strategy: Greedy approach, always select minimum distance vertex
+  - Time Complexity: O(n²)
+  - Constraint: Non-negative edge weights
+  - Maintains dist array and found set
+- **Floyd-Warshall Algorithm**:
+  - Purpose: All-pairs shortest path
+  - Strategy: Dynamic programming with intermediate vertices
+  - Time Complexity: O(n³)
+  - Formula: A^k[i][j] = min(A^(k-1)[i][j], A^(k-1)[i][k] + A^(k-1)[k][j])
+  - Handles negative weights (but not negative cycles)
 
 ### Algorithm Comparison
+- **Kruskal vs Prim**: Kruskal better for sparse graphs, Prim for dense graphs
+- **Dijkstra vs Floyd-Warshall**: Dijkstra for single source, Floyd-Warshall for all pairs

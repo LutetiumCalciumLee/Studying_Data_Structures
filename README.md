@@ -360,12 +360,12 @@
 
 ### Binary Tree Properties
 - n nodes → n-1 edges
-- Height k → at most 2^k - 1 nodes
-- n nodes → height between ⌈log₂(n+1)⌉ and n
+- Height k → at most $$2^k - 1$$ nodes
+- n nodes → height between $$⌈log_2n+1⌉$$ and n
 
 ### Binary Tree Representation
 - **Array Representation**:
-  - Allocate array of size 2^k - 1
+  - Allocate array of size $$2^k - 1$$
   - Use full binary tree numbering as indices
   - Good for full/complete trees, wasteful for skewed trees
 - **Linked Representation**:
@@ -421,12 +421,12 @@
 - **Advantage**: Maintains sorted state by definition
 
 ### BST Operations
-- **Search by Key**: O(log₂n) average case
+- **Search by Key**: $$O(log_2n)$$ average case
   - Compare key with root
   - Go left if key  root
 - **Search by Value**: O(n) - must check all nodes
 - **Min/Max Search**: Follow leftmost/rightmost path
-- **Insert**: O(log₂n) - follow search path, insert at failure point
+- **Insert**: $$O(log_2n)$$ - follow search path, insert at failure point
 - **Delete**: Most complex operation with 3 cases:
   - Case 1: Leaf node - simply remove
   - Case 2: One child - connect child to parent
@@ -438,7 +438,7 @@
 - **Skewed Tree**: O(n) for all operations (worst case)
 
 ### Balanced Binary Search Tree (AVL Tree)
-- **Purpose**: Guarantee balanced tree for consistent O(log₂n) performance
+- **Purpose**: Guarantee balanced tree for consistent $$O(log_2n)$$ performance
 - **Balance Factor**: Height difference between left and right subtrees
 - **Constraint**: Balance factor must be -1, 0, or 1
 - **Rebalancing**: Use rotations when balance factor becomes ±2
@@ -480,7 +480,7 @@
 ### Graph Representation
 - **Adjacency Matrix**: n×n matrix representing connections
   - Advantages: O(1) edge lookup, suitable for dense graphs
-  - Disadvantages: O(n²) space regardless of edge count
+  - Disadvantages: $$O(n^2)$$ space regardless of edge count
 - **Adjacency List**: List of adjacent vertices for each vertex
   - Advantages: O(n+e) space, suitable for sparse graphs
   - Disadvantages: O(degree) edge lookup time

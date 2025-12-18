@@ -1,8 +1,6 @@
 <details>
 <summary>ENG (English Version)</summary>
 
-# Data Structures
-
 ## Chapter 1: Data Structures and Algorithms
 
 ### Data Structure
@@ -51,7 +49,6 @@
 <details>
 <summary>KOR (한국어 버전)</summary>
 
-# 자료구조
 
 ## 1장: 자료구조와 알고리즘
 

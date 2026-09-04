@@ -2,8 +2,9 @@
 <summary>ENG (English Version)</summary>
 
 # Data Structures
+This repository contains my notes and code from studying Data Structures as part of the AI Software High-Tech Program.
 
-## Chapter 1: Data Structures and Algorithms
+## [Chapter 1: Data Structures and Algorithms](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.01)
 
 ### What is Data Structure?
 
@@ -19,7 +20,7 @@
 
 ---
 
-## Chapter 2: List & Set
+## [Chapter 2: List & Set](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.02)
 
 ### List / Linear List
 
@@ -31,7 +32,7 @@
 
 ---
 
-## Chapter 3: Stack
+## [Chapter 3: Stack](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.03)
 
 ### Stack Definition
 
@@ -43,7 +44,7 @@
 
 ---
 
-## Chapter 4: Queue & Deque
+## [Chapter 4: Queue & Deque](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.04)
 
 ### Queue Definition
 
@@ -57,7 +58,7 @@
 
 ---
 
-## Chapter 5: Linked Structures
+## [Chapter 5: Linked Structures](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.05)
 
 ### Linked Structure
 
@@ -71,7 +72,7 @@
 
 ---
 
-## Chapter 6: Sorting and Searching
+## [Chapter 6: Sorting and Searching](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.06)
 
 ### Sorting
 
@@ -91,7 +92,7 @@
 
 ---
 
-## Chapter 7: Tree
+## [Chapter 7: Tree](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.07)
 
 ### Tree
 
@@ -109,7 +110,7 @@
 
 ---
 
-## Chapter 8: Search Tree
+## [Chapter 8: Search Tree](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.08)
 
 ### Binary Search Tree (BST)
 
@@ -119,7 +120,7 @@
 
 ---
 
-## Chapter 9: Graph
+## [Chapter 9: Graph](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.09)
 
 ### Graph
 
@@ -133,7 +134,7 @@
 
 ---
 
-## Chapter 10: Weighted Graph
+## [Chapter 10: Weighted Graph](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.10)
 
 ### Weighted Graph
 
@@ -154,8 +155,9 @@
 <summary>KOR (한국어 버전)</summary>
 
 # 자료구조
+이 Repository에는 인공지능소프트웨어과 하이테크 과정에서 학습한 자료구조 내용과 코드를 정리하여 업로드했습니다.
 
-## 1장: 자료구조와 알고리즘
+## [1장 : 자료구조와 알고리즘](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.01)
 
 ### 자료구조란?
 
@@ -171,7 +173,7 @@
 
 ---
 
-## 2장: 리스트 & 집합
+## [2장 : 리스트 & 집합](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.02)
 
 ### 리스트 / 선형 리스트
 
@@ -183,7 +185,7 @@
 
 ---
 
-## 3장: 스택
+## [3장 : 스택](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.03)
 
 ### 스택 정의
 
@@ -195,7 +197,7 @@
 
 ---
 
-## 4장: 큐 & 덱
+## [4장 : 큐, 덱](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.04)
 
 ### 큐 정의
 
@@ -209,7 +211,7 @@
 
 ---
 
-## 5장: 연결 구조
+## [5장 : 연결 구조](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.05)
 
 ### 연결 구조
 
@@ -223,7 +225,7 @@
 
 ---
 
-## 6장: 정렬과 탐색
+## [6장 : 정렬과 탐색](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.06)
 
 ### 정렬
 
@@ -243,7 +245,7 @@
 
 ---
 
-## 7장: 트리
+## [7장 : 트리](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.07)
 
 ### 트리
 
@@ -261,7 +263,7 @@
 
 ---
 
-## 8장: 탐색 트리
+## [8장 : 탐색 트리](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.08)
 
 ### 이진 탐색 트리 (BST)
 
@@ -271,7 +273,7 @@
 
 ---
 
-## 9장: 그래프
+## [9장 : 그래프](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.09)
 
 ### 그래프
 
@@ -285,7 +287,7 @@
 
 ---
 
-## 10장: 가중치 그래프
+## [10장 : 가중치 그래프](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.10)
 
 ### 가중치 그래프
 

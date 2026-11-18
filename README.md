@@ -48,7 +48,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary>KOR (한국어 버전)</summary>
 
 ## 10장: 가중치 그래프

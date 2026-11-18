@@ -151,11 +151,11 @@ This repository contains my notes and code from studying Data Structures as part
 
 </details>
 
-<details>
+<details open>
 <summary>KOR (한국어 버전)</summary>
 
 # 자료구조
-이 Repository에는 인공지능소프트웨어과 하이테크 과정에서 학습한 자료구조 내용과 코드를 정리하여 업로드했습니다.
+이 Repository에는 인공지능소프트웨어과 하이테크 과정에서 학습한 자료구조 내용과 코드를 정리했습니다.
 
 ## [1장 : 자료구조와 알고리즘](https://github.com/LutetiumCalciumLee/Studying_Data_Structures/tree/Ch.01)
 

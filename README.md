@@ -32,7 +32,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary>KOR (한국어 버전)</summary>
 
 ## 8장: 탐색 트리
